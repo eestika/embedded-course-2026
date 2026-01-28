@@ -13,12 +13,19 @@ embedded systems development.
 ## 📂 Repository structure
 
 embedded-course-2026/
+
 ├── 00_admin/ # Course info, syllabus, reference material
+
 ├── 01_notes/ # Theory notes and explanations
+
 ├── 02_exercises/ # Programming exercises (C / C++ / Arduino / ESP32)
+
 ├── 03_labs/ # Hardware labs and board-specific experiments
+
 ├── 04_katas/ # Coding katas and logic exercises
+
 ├── 05_tools/ # Tools, scripts, utilities
+
 ├── 99_sandbox/ # Temporary experiments and scratch work
 
 
