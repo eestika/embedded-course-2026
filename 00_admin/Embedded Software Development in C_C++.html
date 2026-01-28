@@ -1,0 +1,436 @@
+
+<!-- saved from url=(0055)https://www.gammatest.net/en/course_plc_programming.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="text/javascript" data-name="TokenSigning" data-by="Web-eID extension" src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/y2/r/onuUJj0tCqE.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style><style type="text/css">.inspectlet-widget { position: fixed; height: 50px; width: 50px; background: #2c8aff; bottom: 20px; right: 20px; border-radius: 50px; box-shadow: 0 0 5px rgb(0 0 0 / 20%), 0 0 10px rgb(255 255 255 / 10%) inset; border: 2px solid rgb(38 132 234); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all .25s ease; } .inspectlet-widget:hover{ opacity: .8; }
+
+.inspectlet-widget img{ height: 70%; width: 70%; }</style></head><body id="hp">﻿
+
+
+    <title>Embedded Software Development in C/C++	</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta http-equiv="content-language" content="en">
+    <meta name="description" content="Embedded Software Development in C/C++	">
+    <meta name="keywords" content="course, PLC, Estonia, Tallinn, Gamma Intelligence, microcontroller	">
+
+    <!--meta name="keywords"
+          content="mobile applications testing, websites testing, software testing, software quality, outsource testing, desktop applications testing, apps testing, quality assurance"/-->
+    <meta name="author" content="γ-Test: e-mail:info[]gammatest.net">
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./Embedded Software Development in C_C++_files/main2.css">
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./Embedded Software Development in C_C++_files/skin2.css">
+
+    <!--  Loopslider jquery plugin-->
+    <script src="./Embedded Software Development in C_C++_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Embedded Software Development in C_C++_files/js"></script><script type="text/javascript" async="" src="./Embedded Software Development in C_C++_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Embedded Software Development in C_C++_files/js(1)"></script><script type="text/javascript" async="" src="./Embedded Software Development in C_C++_files/js(2)"></script><script src="./Embedded Software Development in C_C++_files/335919030887281" async=""></script><script src="./Embedded Software Development in C_C++_files/sdk.js.download" async="" crossorigin="anonymous"></script><script async="" src="./Embedded Software Development in C_C++_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Embedded Software Development in C_C++_files/plusone.js.download" gapi_processed="true"></script><script async="" src="./Embedded Software Development in C_C++_files/gtm.js.download"></script><script type="text/javascript" async="" id="inspsync" src="./Embedded Software Development in C_C++_files/inspectlet.js.download"></script><script async="" src="./Embedded Software Development in C_C++_files/fbevents.js.download"></script><script id="facebook-jssdk" src="./Embedded Software Development in C_C++_files/sdk(1).js.download"></script><script type="text/javascript" async="" charset="utf-8" src="./Embedded Software Development in C_C++_files/recaptcha__it.js.download" crossorigin="anonymous" integrity="sha384-VUBqHI1ojxRICtovkl6aP3fLvihdVV5eHch5vkn0BLLxuWpoDzMyFNZLB3LMwNb+"></script><script type="text/javascript" src="./Embedded Software Development in C_C++_files/jquery-1.3.2.min.js.download" charset="utf-8"></script>
+    <script type="text/javascript" src="./Embedded Software Development in C_C++_files/jquery.loopedslider.js.download"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        $j = jQuery.noConflict();
+        $j(document).ready(function () {
+            $j(function () {
+                $j('.slider').loopedSlider({
+                    container: ".slider-container",
+                    slides: ".slider-slides",
+                    pagination: "slider-pagination",
+                    containerClick: false,
+                    autoStart: 5000,
+                    slidespeed: 750,
+                    fadespeed: 500,
+                    addPagination: true
+                });
+            });
+
+        });
+
+    </script>
+
+
+    <script type="text/javascript" src="./Embedded Software Development in C_C++_files/jquery.js.download"></script>
+    
+    <link href="./Embedded Software Development in C_C++_files/bootstrap.min.css" rel="stylesheet">
+
+	<script src="./Embedded Software Development in C_C++_files/api.js.download"></script>
+
+
+
+ <!-- APPLY STYLE FOR HOMEPAGE -->
+<div class="main container">
+
+
+<script type="text/javascript" src="./Embedded Software Development in C_C++_files/fbapp.js.download"></script>
+
+<!--        <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.js"></script>-->
+<script type="text/javascript" src="./Embedded Software Development in C_C++_files/jquery.validate.js.download"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+
+        //form validations
+        $("#loginform").validate();
+        $("#registrationform").validate();
+        $("#contactform").validate();
+        $("#aboutform").validate();
+
+    });
+
+
+</script>
+
+<script src="./Embedded Software Development in C_C++_files/bootstrap.min.js.download"></script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '335919030887281');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=335919030887281&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Begin Inspectlet Asynchronous Code -->
+<script type="text/javascript">
+(function() {
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1386000657]);
+var ldinsp = function(){
+if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1386000657&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 0);
+})();
+</script>
+<!-- End Inspectlet Asynchronous Code -->
+
+    <script type="text/javascript" src="./Embedded Software Development in C_C++_files/jquery(1).js.download"></script>
+    
+    <link href="./Embedded Software Development in C_C++_files/bootstrap(1).min.css" rel="stylesheet">
+
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="./Embedded Software Development in C_C++_files/js(3)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZQCXXES1X');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5LKHDTX');</script>
+<!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Embedded Software Development in C_C++_files/js(4)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E42Y7MFMFL');
+</script>
+
+
+
+
+
+<!-- HEADER -->
+<div class="row">
+    <div class="header box col-md-12">
+        <!--p class="logo"><a href="/index.html">
+        <!-- SLOGAN -->
+        <div class="slogan">
+            <!--<div class="col-md-4">-->
+            <!--<a href="/index.php" style="text-decoration:none;">-->
+            <!--<h2 style="color:black"><i>γ-Test</i><br/></h2>-->
+            
+            <!--</div>-->
+            <!-- /slogan -->
+
+            
+            <!-- NAVIGATION -->
+            <!-- Fixed navbar -->
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header" style="padding: 5px;">
+			<!--img src="/tmp/logo_white.png" height="45"></img-->
+                        <a class="navbar-brand" href="https://www.gammatest.net/index.php">Gamma Intelligence Training Centre</a>
+			<a aria-label="Chat on WhatsApp" href="https://wa.me/+37255581521" style="position: fixed;  right: 15px; top: 1px;"><img alt="Chat on WhatsApp" src="./Embedded Software Development in C_C++_files/whatsapp_icon.svg"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>     
+
+    </div>
+</div>
+<!-- /header -->
+
+    
+<div class="row pagecontent">
+<div class="content box col-md-12">
+<br>
+
+<div class="col-md-12 col-sm-12">
+
+<h1 class="cufon" align="left">Embedded Software Development in C/C++</h1><hr>
+
+<div class="col-md-9 col-sm-12">
+<h2 class="cufon"><strong>Course Information</strong></h2>
+    <h4><strong>Course Objective: </strong>to provide basic theoretical knowledge and practical skills necessary for developing embedded software in C/C++.<br><br>
+	<strong>Target Group: </strong>This course is designed for those who want to gain both theoretical and practical skills in developing software for microcontrollers in C/C++.<br><br>
+	The training is conducted in a classroom format, in a practical lab at Tartu mnt. 18, Tallinn. Group size up to 6 people. All study materials are included in the course price. <strong>A laptop can be provided for the duration of the course if needed.</strong>
+	
+	</h4><hr>
+    <div class="row pagecontent">
+	<div class="col-md-6 col-sm-12">
+    <h4><strong>Requirements for Participants:</strong></h4>
+		<li>Confident PC user</li>
+		<li>Basic level of English (approximate A1/A2 level)</li>
+		<li><strong>Preferably with your own laptop (Windows / Mac, 8 GB RAM, screen size &gt; 13.3"); a laptop can be provided if needed.</strong></li>
+
+	
+	<h4><strong>Learning Outcomes:</strong></h4>
+	After completing the course, participants will:
+<br><br>
+
+<li>Understand how popular microcontrollers such as STM32, ESP32, RP2040, and Teensy work</li>
+<li>Be able to write software for microcontrollers using C/C++</li>
+<li>Know how to connect sensors and actuators to microcontrollers</li>
+<li>Use debugging tools, logic analyzers, and oscilloscopes</li>
+<li>Understand the principles of building autonomous devices (robots, drones, IoT)</li>
+
+<h4><strong>Learning Methods:</strong></h4>
+Total course volume: 180 academic hours, including 100 academic hours in the classroom (42 hours of practical work and 2 seminars totaling 8 hours)
+<h4><strong>Assessment Criteria:</strong></h4>
+Learning outcomes are assessed based on independently completed practical work.
+<h4><strong>Assessment Methods:</strong></h4>
+Successful completion of practical and homework tasks is marked as "passed".
+<h4><strong>Course Completion Requirements:</strong></h4>
+To complete the course and receive a certificate, at least 75% of homework must be completed and passed.
+<h4><strong>Additional Information:</strong></h4>
+
+<a href="https://www.gammatest.net/oppekorralduse_alused.php">General rules for organizing studies (in Estonian)</a>
+<br><a href="https://www.gammatest.net/oppekvaliteedi_tagamine.php">Rules for ensuring study quality (in Estonian)</a>
+
+</div>
+<div class="col-md-6 col-sm-12">
+<h2 class="cufon"><strong>Course program</strong></h2>
+<table class="table" style="width: 100%">
+            <tbody><tr>
+                <td style="width: 30%"><strong>Module</strong></td>
+                <td><strong>Main topics</strong></td>
+                <td><strong>Volume</strong></td>
+            </tr>
+            <tr>
+                <td>1. Introduction to Microcontrollers and Electronics</td>
+                <td>
+			<li>Basic concepts of microcontrollers and their applications in robotics and drones.</li>
+			<li>Comparison of STM32, ESP32, RP2040, and Teensy.</li>
+			<li>Fundamentals of electrical circuits and prototyping.</li>
+			<li>ractical skills: simple circuits assembling, working with a multimeter and an oscilloscope.</li></td>
+                <td>8 ac/h</td>
+            </tr>
+            <tr>
+    <td>2. Fundamentals of Programming in C</td>
+    <td>
+        <li>Data types, variables, arithmetic</li>
+        <li>Loops, conditions, functions, pointers</li>
+        <li>Working with arrays and strings</li>
+        <li>Practice: writing and debugging simple programs</li>
+    </td>
+    <td>16 acad. hrs</td>
+</tr>
+<tr>
+    <td>3. Fundamentals of C++ for Microcontrollers</td>
+    <td>
+        <li>Classes, objects, encapsulation</li>
+        <li>Inheritance, templates, data structures</li>
+        <li>RAII, memory handling, standard libraries</li>
+        <li>Creating peripheral control libraries</li>
+    </td>
+    <td>14 acad. hrs</td>
+</tr>
+<tr>
+    <td>4. Working with STM32, ESP32, RP2040, Teensy</td>
+    <td>
+        <li>Using STM32CubeIDE, ESP-IDF, Pico SDK, Arduino Core</li>
+        <li>GPIO, timers, PWM, ADC, interrupts, DMA</li>
+        <li>Communication: UART, I2C, SPI, BLE, Wi-Fi</li>
+        <li>Working with sensors and motors, real-world integration</li>
+    </td>
+    <td>30 acad. hrs</td>
+</tr>
+<tr>
+    <td>5. Debugging and Testing Embedded Systems</td>
+    <td>
+        <li>Using ST-Link, J-Link, UART, SWD/JTAG</li>
+        <li>Using logic analyzers and oscilloscopes</li>
+        <li>Debugging and troubleshooting techniques</li>
+        <li>Bug tracking and hardware debugging</li>
+    </td>
+    <td>14 acad. hrs</td>
+</tr>
+<tr>
+    <td>6. Final Project</td>
+    <td>
+        <li>Selecting a project: drone, mobile robot, or IoT device</li>
+        <li>Designing circuit and software architecture</li>
+        <li>Integrating sensors, motors, communication, and control</li>
+        <li>Project presentation and defense</li>
+    </td>
+    <td>16 acad. hrs</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-12">
+    <h2 class="cufon"><strong>Course Details</strong></h2>
+    <h5 class="cufon">		
+    <strong>Course Schedule: </strong><br> 23.02.2026 - 25.04.2026<br>
+    <strong>Class Time: </strong><br> Mon, Wed, Fri 17:45 - 21:00<hr></h5><h2><a href="https://www.gammatest.net/en/course_plc_request.php" align="center">Apply Now</a></h2><hr>
+    <strong>Course Duration: </strong>2 months<br><br>
+    <strong>Format and Location: </strong><br>
+    Address: Tartu mnt. 18-53, Tallinn.<br>
+    <img src="./Embedded Software Development in C_C++_files/Gamma_Main_1_240.jpg" alt="Gamma Intelligence Training Centre"><br>
+    In-person training at our lab located at Tartu mnt. 18-53, Tallinn. Group size up to 6 people.<br><br>
+    <strong>Language of Instruction: </strong>English<br><br>
+    <strong>Cost: </strong>1967.21 EUR + VAT<br><br>
+    <strong>Total Course Volume: </strong>180 acad. hrs<br>
+    Includes:<br>
+    <li>Classroom sessions: 100 acad. hrs (including 42 practical hrs and 2 seminars – 8 acad. hrs)</li>
+    <li>Independent work: 80 acad. hrs</li><br>
+    <h2 class="cufon"><strong>Instructors</strong></h2>
+    <h5><strong>Nikolai Barbanov</strong><br><br></h5>
+    <strong>Qualification:</strong> Over 10 years of experience managing physical systems and automation — from manufacturing (Ericsson) to logistics and e-commerce. A hands-on practitioner and hobbyist in robotics and  programming.<br><br>
+    <strong>Specialization: </strong>Design of controllable systems, automation of physical and virtual processes, orchestration of distributed components.<br><br>
+    <strong>Teaching Experience: </strong>10+ years in corporate operations, training, and consulting. Speaker at technical conferences, including PyCon Estonia (https://pycon.ee/).<br><br>
+    <strong>Education: </strong>Master of Science in Physics, Lomonosov Moscow State University, 2015. Thesis focused on signal analysis from bottom pressure recorders used in the DART (Deep-ocean Assessment and Reporting of Tsunamis) system for early tsunami detection. The topic is directly related to sensor data processing and the architecture of distributed systems — the core foundation of this course..<br>
+    <p class="more"><a href="https://www.gammatest.net/ru/trainers.php">View CV</a></p>
+    <hr>
+</div>
+</div>
+
+<div class="col-md-12 col-sm-12">
+    <div class="col-md-9 col-sm-12">
+    </div>
+</div>
+</div>
+</div>
+
+﻿<!-- FOOTER -->
+<div class="row">
+    <div class="footer box col-md-12">
+        <div class="f-left col-md-2 col-sm-12">
+           	Copyright ©&nbsp;2013-2023 Gamma Intelligence
+		<br> 
+	             </div>
+ 
+	    <div class="col-md-2 col-sm-12" style="padding-left: 20px" align="right">
+		Software development
+            </div>
+            <div class="col-md-2 col-sm-12" style="padding-left: 20px" align="right">
+		<a href="http://www.gamma-intelligence.com/">Business solutions</a>
+            </div>
+	    <div class="col-md-3 col-sm-12" style="padding-left: 20px" align="right">
+		<strong>Consulting and Training Courses</strong>
+			<br><a href="https://www.gammatest.net/en/python_course.php">Python for beginners</a>
+			<br><a href="https://www.gammatest.net/koolitus_tarkvara_testimine.php">Software testing course</a>
+			<br><a href="https://www.gammatest.net/koolitus_mysql.php">MySQL basic course</a><br>
+            </div>
+            <div class="col-md-3 col-sm-12" style="padding-left: 20px">
+		<p class="f-right t-right">
+		
+                <strong>GAMMA INTELLIGENCE OÜ</strong><br>
+				<strong>11122396</strong><br>
+                <strong>Address:</strong> 10145, Tornimäe 7-170, Tallinn, Estonia<br>
+                <strong>Phone:</strong> +372 555 81 521<br>
+                <strong>Email:</strong> info[]gammatest.net<br>
+            </p>
+            </div>
+
+
+ 
+
+        </div>
+
+
+<!--     Place this tag after the last widget tag.-->
+        <script type="text/javascript">
+            window.___gcfg = {lang: 'en'};
+
+            (function () {
+                var po = document.createElement('script');
+                po.type = 'text/javascript';
+                po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Embedded Software Development in C_C++_files/js(5)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D352T5CXHM');
+</script>
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-52351604-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+    </div>
+    <!-- /footer -->
+</div>
+ <!-- /main -->
+
+ <!-- /bg -->
+
+<!--<script type="text/javascript"> Cufon.now(); </script>-->
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>
