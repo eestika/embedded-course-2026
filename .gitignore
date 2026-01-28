@@ -51,7 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
+# Debug information files
 *.dwo
 
 # Personal folders (never commit)
@@ -59,3 +59,8 @@ English/
 Resources/
 Weekly_Review/
 
+# Course HTML assets (external JS / analytics)
+00_admin/*_files/
+
+# Browser leftovers / downloads
+*.download
