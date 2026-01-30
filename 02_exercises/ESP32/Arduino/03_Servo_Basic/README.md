@@ -36,9 +36,9 @@ Serial prints are used to confirm the commanded positions.
 **Important:** Always connect **servo GND** and **ESP32 GND** together (common ground).
 
 ### Photos
-![Wiring overview](/wiring_overview.jpg)  
-![Wiring detail](/wiring_detail.jpg)  
-![Servo in motion](/servo_positions.jpg)
+![Wiring overview](/wiring_overview.jpeg)  
+![Wiring detail](/wiring_detail.jpeg)  
+![Servo in motion](/servo_positions.jpeg)
 
 ### Software
 - IDE: Visual Studio Code
