@@ -45,7 +45,7 @@ After the last LED, the sequence restarts from the first one.
 
 ![Green LED](/02_exercises/ESP32/Arduino/02_LED_Button_Sequence/led_green_on.jpeg)
 
-![LED red on](led_red_on.jpg)
+![LED red on](led_red_on.jpeg)
 
 ### Pin detail
 
