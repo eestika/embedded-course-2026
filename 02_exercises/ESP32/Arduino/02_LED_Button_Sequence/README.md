@@ -43,12 +43,12 @@ After the last LED, the sequence restarts from the first one.
 
 ### Wiring overview
 
-![LED green on](media/led_green_on.jpg)  
-![LED red on](media/led_red_on.jpg)
+![LED green on](led_green_on.jpg)  
+![LED red on](led_red_on.jpg)
 
 ### Pin detail
 
-![Wiring detail](media/wiring_detail.jpg)
+![Wiring detail](wiring_detail.jpg)
 
 ### Software
 
