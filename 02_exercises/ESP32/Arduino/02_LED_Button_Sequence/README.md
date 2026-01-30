@@ -149,7 +149,9 @@ Nupp on ühendatud otse GPIO ja GND vahele, ilma välise takistita.
 
 ESP32 sisemine pull-up takisti aktiveeritakse tarkvaras käsuga:
 
+```cpp
 pinMode(BTN, INPUT_PULLUP);
+```
 Nupp vabastatud → HIGH
 
 Nupp vajutatud → LOW
@@ -206,7 +208,9 @@ senza l’utilizzo di una resistenza esterna.
 La resistenza di pull-up interna dell’ESP32 viene abilitata via software
 tramite l’istruzione:
 
+```cpp
 pinMode(BTN, INPUT_PULLUP);
+```
 
 Con questa configurazione:
 
