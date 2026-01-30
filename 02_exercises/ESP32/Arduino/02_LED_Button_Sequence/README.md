@@ -43,7 +43,8 @@ After the last LED, the sequence restarts from the first one.
 
 ### Wiring overview
 
-![LED green on](led_green_on.jpg)  
+![Green LED](/02_exercises/ESP32/Arduino/02_LED_Button_Sequence/led_green_on.jpg)
+
 ![LED red on](led_red_on.jpg)
 
 ### Pin detail
