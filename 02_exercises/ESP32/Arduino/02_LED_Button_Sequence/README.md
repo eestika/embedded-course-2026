@@ -71,6 +71,8 @@ The ESP32 internal pull-up resistor is enabled in software using:
 
 ```cpp
 pinMode(BTN, INPUT_PULLUP);
+---
+
 With this configuration:
 
 Button released → HIGH
