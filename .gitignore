@@ -1,3 +1,7 @@
+##################################################
+# Generic build artifacts (C / C++ / Embedded)
+##################################################
+
 # Prerequisites
 *.d
 
@@ -22,7 +26,7 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# Shared objects (Windows / Linux / macOS)
 *.dll
 *.so
 *.so.*
@@ -36,13 +40,18 @@
 *.x86_64
 *.hex
 
-# Debug files
+##################################################
+# Debug / temporary files
+##################################################
+
+# Debug symbols
 *.dSYM/
 *.su
 *.idb
 *.pdb
+*.dwo
 
-# Kernel Module Compile Results
+# Kernel / toolchain leftovers
 *.mod*
 *.cmd
 .tmp_versions/
@@ -51,16 +60,64 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Debug information files
-*.dwo
+##################################################
+# PlatformIO
+##################################################
 
-# Personal folders (never commit)
+.pio/
+.pioenvs/
+.piolibdeps/
+
+##################################################
+# Arduino IDE
+##################################################
+
+*.ino.bin
+*.ino.hex
+*.ino.elf
+
+##################################################
+# VS Code
+##################################################
+
+.vscode/
+.history/
+
+##################################################
+# Operating system
+##################################################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+##################################################
+# Personal / non-public folders (NEVER commit)
+##################################################
+
 English/
 Resources/
 Weekly_Review/
 
+##################################################
+# Course-specific exclusions
+##################################################
+
+# Pre-course warmup exercises (local only)
+00_PreCourse_Warmup/
+
 # Course HTML assets (external JS / analytics)
 00_admin/*_files/
 
+##################################################
 # Browser leftovers / downloads
+##################################################
+
 *.download
+*.crdownload
+*.part
