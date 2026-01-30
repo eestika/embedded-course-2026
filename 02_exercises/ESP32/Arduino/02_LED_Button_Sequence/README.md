@@ -49,7 +49,7 @@ After the last LED, the sequence restarts from the first one.
 
 ### Pin detail
 
-![Wiring detail](wiring_detail.jpg)
+![Wiring detail](wiring_detail.jpeg)
 
 ### Software
 
